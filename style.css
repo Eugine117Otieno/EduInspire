@@ -1,0 +1,442 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7ff;
+    color: #1d2340;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101c3b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #65d6ff;
+}
+
+/* HOME HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #101c3b, #273d82, #6b52cf);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    margin: 30px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #70e1ff;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #e2e8ff;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: #61dcff;
+    color: #101c3b;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
+}
+
+button {
+    padding: 14px 25px;
+    border: none;
+    background: #6354d9;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4334ad;
+    transform: scale(1.05);
+}
+
+/* GENERAL SECTION */
+
+.welcome,
+.education {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.welcome h2,
+.education h2,
+.quotes h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome > p {
+    max-width: 750px;
+    margin: auto;
+    color: #667085;
+    line-height: 1.8;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.card {
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(30, 40, 100, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(30, 40, 100, 0.15);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #263b80;
+}
+
+.card p {
+    line-height: 1.7;
+    color: #697386;
+}
+
+/* INNER PAGE HERO */
+
+.page-hero {
+    padding: 100px 8%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(120deg, #16254c, #4c60c7, #7554d6);
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.page-hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e1e7ff;
+}
+
+.dreams-hero {
+    background: linear-gradient(120deg, #133b69, #326cc9, #7955d9);
+}
+
+.motivation-hero {
+    background: linear-gradient(120deg, #412166, #6953d0, #378bd7);
+}
+
+/* DREAMS SECTION */
+
+.dream-section {
+    padding: 80px 8%;
+    background: #16254c;
+    color: white;
+}
+
+.dream-section h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.dream-list {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 18px;
+}
+
+.dream-list div {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.dream-list div:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateX(8px);
+}
+
+/* QUOTES */
+
+.quotes {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.quote-box {
+    max-width: 800px;
+    margin: 35px auto 0;
+    padding: 45px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+}
+
+.quote-box p {
+    font-size: 27px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.quote-box h4 {
+    margin: 25px 0;
+    color: #6752ce;
+}
+
+/* MOTIVATION */
+
+.motivation-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.motivation-section h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.motivation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.motivation-card {
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.motivation-card:hover {
+    transform: translateY(-6px);
+}
+
+.motivation-card h3 {
+    margin-bottom: 15px;
+    color: #4d48b7;
+}
+
+.motivation-card p {
+    color: #697386;
+    line-height: 1.7;
+}
+
+/* BANNER */
+
+.banner {
+    padding: 80px 8%;
+    text-align: center;
+    background: #16254c;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* CTA */
+
+.cta {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #6653d9, #3c77d8);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.cta button {
+    background: #70e1ff;
+    color: #10214b;
+    font-weight: bold;
+}
+
+#motivation-message {
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #101c3b;
+    color: #cbd5ff;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-hero h1,
+    .dream-section h2,
+    .banner h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .motivation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .quote-box {
+        padding: 25px;
+    }
+
+    .quote-box p {
+        font-size: 21px;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+}
